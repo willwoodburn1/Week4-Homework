@@ -16,13 +16,34 @@
     <div class="titlePageContentDiv">
         <h1> Coding Quiz Challenge </h1>
         <p> Try to answer the following questions within the time limit. Keep in mind that incorrect answers will
-            penalize your scoreTime by ten seconds!
-
+            penalize your Score Time by Ten Seconds!
         </p>
         <button id="startQuizButton"> Start Quiz </button>
     </div>
 
+    <div id="questionsAsked" class="hide">
+        <h2 class="theQuestion"> <br> </br> </h2>
+        <ul class="possibleAnswers">
+            <li type="click">
+                <button id="answer1" class="listButton"> </button>
+            </li>
+            <li type="click">
+                <button id="answer2" class="listButton"></button>
+            </li>
+            <li type="click"> <button id="answer3" class="listButton"> </button> </li>
+            <li type="click"> <button id="answer4" class="listButton"> </button> </li>
 
+        </ul>
+    </div>
+
+    <div id="resultsPage" class="hide">
+        <h1 id="yourScore"> </h1>
+        <div>
+            <h2> High Scores List: </h2>
+            <ul id="highScores"> </ul>
+        </div>
+
+    </div>
 
 
 
