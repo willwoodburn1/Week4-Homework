@@ -2,25 +2,93 @@
     margin-top: 4em;
 }
 
+body {
+    background-color: lightslategray;
+}
+
 h1 {
-    border: 1px solid red;
+
     text-align: center;
     margin-top: 100px;
     margin-left: 33%;
     margin-right: 33%;
+    color: white;
+    font-size: 50px;
     
    
 }
 p {
-    border: 1px solid black;
     text-align: center;
     margin-left: 33%;
     margin-right: 33%;
+    color: white;
+    font-size: 25px;
     
 }
 
 #startQuizButton {
     position: absolute;
+    text-align: center;
     left: 47%;
+    padding: 30px;
+   background-color: black;
+   color: white;
     
+}
+
+#questionsAsked {
+    position: relative;
+    top: 4em;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    font-size: 20px;
+    
+       
+}
+
+li {
+    padding: 10px;
+}
+
+.listButton {
+    padding: 20px;
+   width: 90%;
+   border: 2px solid orange;
+   background-color: darkgray;
+   color: black;
+   font-size: 20px;
+}
+
+
+
+#yourScore {
+    font-family: serif; 
+    
+}
+
+
+
+h2 {
+    color: black;
+    font-size: 33px;
+   
+   
+}
+
+
+li {
+    color:white;
+    font-size: 25px;
+    
+}
+
+
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
 }
