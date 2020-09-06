@@ -74,6 +74,9 @@ listButtons.forEach(function (item) {
 
             }
 
+            var hs = JSON.parse(localStorage.getItem("hs")) || [];
+            hs.push(count)
+            localStorage.setItem("hs", JSON.stringify(hs))
             showHighScores()
 
 
@@ -91,9 +94,8 @@ var highScoresList = [];
 function showHighScores() {
     if (currentQuestion >= questions.length) {
         resultsDiv.classList.remove("hide");
-        var score = count
-        yourScoreEl.textContent = ("Your score for the quiz is: " + score);
-        highScoresList.push(score);
+        yourScoreEl.textContent = ("Your score for the quiz is: " + count);
+        highScoresList.push(count);
         renderHighScores();
 
     }
@@ -104,17 +106,15 @@ function renderHighScores() {
     // Clear todoList element and update todoCountSpan
     highScoresEl.innerHTML = "";
 
+    var hs = JSON.parse(localStorage.getItem("hs"));
 
     // Render a new li for each 
-    for (var i = 0; i < highScoresList.length; i++) {
-        var highScores = highScoresList[i];
+    for (var i = 0; i < hs.length; i++) {
+        var highScores = hs[i];
 
         var li = document.createElement("li");
         li.textContent = highScores;
         highScoresEl.appendChild(li);
-
-
-
     }
 }
 
